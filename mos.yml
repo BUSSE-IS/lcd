@@ -3,14 +3,17 @@ type: lib
 description: A library for the Grove - LCD RGB Backlight 2 line display
 version: 1.0
 
+platforms: [ esp32 ]
+
 sources:
   - src
 filesystem:
   - fs
 config_schema:
   - ["i2c.enable", true]
-  - ["i2c.sda_gpio", 23]
-  - ["i2c.scl_gpio", 22]
+  - ["i2c.sda_gpio", 22]
+  - ["i2c.scl_gpio", 21]
+
 libs:
   - origin: https://github.com/mongoose-os-libs/mjs
   - origin: https://github.com/mongoose-os-libs/i2c
