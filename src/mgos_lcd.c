@@ -35,7 +35,6 @@ bool mgos_lcd_init(void) {
   convention to have it anyway, so we'll keep it regardless */
 struct mgos_lcd *mgos_lcd_create(uint8_t columns, uint8_t lines,
         uint8_t dotsize) {
-  if (!mgos_i2c_init()) return NULL;
 
   struct mgos_lcd *lcd = calloc(1, sizeof(*lcd));
   if (lcd == NULL) return NULL;
