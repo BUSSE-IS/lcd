@@ -25,7 +25,7 @@
   THE SOFTWARE.
 */
 
-#include "mgos_lcd.h"
+#include "../include/mgos_lcd.h"
 
 bool mgos_lcd_init(void) {
   return true;
