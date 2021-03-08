@@ -30,7 +30,7 @@
 
 #include <stdio.h>
 #include <float.h>
-#include "fw/src/mgos.h"
+#include <mgos.h>
 #include "mgos_system.h"
 #include "mgos_i2c.h"
 
